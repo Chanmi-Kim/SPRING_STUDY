@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- config01.xml -->
+	<!-- 객체를 생성 ~ 소멸 : 스프링 프레임워크에게 맡길 수 있다. -->
+	<bean id="s1" class="com.test.spring.di_6.Student"></bean>
+	
+	<!-- O -->
+	<bean id="s2" class="com.test.spring.di_6.Student">
+		<!--  
+			객체의 public 멤버(private getter/setter) > 속성, 특성
+			<property> : setter
+		-->
+		<property name="name" value="아무개"></property>
+		<property name="age" value="23"></property>
+	</bean>
+	
+	<!-- X -->
+	<!-- <bean id="s2" class="java.util.Scanner"></bean> -->
+	
+	<bean id="s3" class="com.test.spring.di_6.Student">
+		<constructor-arg value="하하하"></constructor-arg>
+		<constructor-arg value="26"></constructor-arg>
+	</bean>
+	
+	<!-- name : alias 역할 -->
+	<bean id="s4" name="haha,man,s10" class="com.test.spring.di_6.Student">
+		<constructor-arg value="하하하하하"></constructor-arg>
+		<constructor-arg value="29"></constructor-arg>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
