@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- config02.xml -->
+	
+	<!--  
+		객체 생성 대상??
+		- Service 객체
+		- File 객체 or DB 객체
+	-->
+	
+	<bean id="service" class="com.test.spring.di_7.Service"></bean>
+	
+	<bean id="file" class="com.test.spring.di_7.File"></bean>
+	<bean id="db" class="com.test.spring.di_7.DB"></bean>
+	
+	
+	<bean id="service2" class="com.test.spring.di_7.Service">
+		<property name="worker" ref="file"></property>
+	</bean>
+
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
