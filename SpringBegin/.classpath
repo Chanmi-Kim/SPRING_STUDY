@@ -65,5 +65,7 @@
 	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-3.2.9.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-3.2.9.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="lib/spring-webmvc-portlet-3.2.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="lib/aspectjweaver-1.6.10.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
