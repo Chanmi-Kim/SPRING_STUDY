@@ -5,5 +5,61 @@ Maven
  - 프로젝트 빌드 도구
  - 역할 중 하나 : 프로젝트에 필요한 라이브러리(*.jar)을 관리 + 다운로드 해주는 역할
  
+ 1. Spring 기반(Spring MVC) + Web Project
+ 2. 이클립스 기반 + STS(Spring Tools Suite) 플러그인 설치
+ 
+ 
+ lombok(롬복) - p38
+ : bean, pojo, simple object - 단순한 형태의 클래스에서 반복되는 코드(boilerplate code)
+ : getter, setter, toString
+ 
+ 
+ 
+ - Ex04Controller.java
+ - ex04.jsp
+ 
+ 
+글쓰기
+- Ex05Controller.java
+- ex05.jsp
+
+- Ex05OkController.java
+- ex05ok.jsp
+ 
+ 
+글수정하기
+- Ex06Controller.java
+- ex06.jsp
+- ex06ok.jsp
+ 
+ 
+ 
+- Ex07Controller.java
+- ex07.jsp
+- ex07ok.jsp
+- AddressDTO.java
+ 
+ 
+- Ex08Controller.java
+- ex08.jsp
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
  
