@@ -1,0 +1,60 @@
+메모장
+- Spring MVC + Spring JDBC
+
+1. 새프로젝트 생성
+ - New > Other > Spring > Spring Legacy Project
+ - Project name : "SpringMemo" + Spring MVC Project > "com.test.spring" > Finish
+
+ 2. pom.xml(Maven)
+  - 프로젝트에 필요한 라이브러리 다운로드
+  - ojdbc6.jar
+  - spring-jdbc.jar
+  
+ 3. web.xml
+  - src > main > webapp > WEB-INF > web.xml
+  - 스프링 요청 확장자 : *.memo
+  - 인코딩 필터 추가
+ 
+ 4. root-context.xml
+  - src > main > webapp > WEB-INF > spring > root-context.xml
+  - 설정 없음
+  
+ 5. servlet-context.xml
+  - src > main > webapp > WEB-INF > spring > appServlet > servlet-context.xml
+  - 설정 없음
+  
+ 6. Bootstrap
+  - webapp > resources > 복사
+ 
+ 7. SQL
+  - SpringMemo > script.sql 생성
+  
+ 8. 파일 생성
+  a. com.test.spring > MemoController.java
+  b. com.test.spring > IMemo.java //DAO 인터페이스
+  c. com.test.spring > MemoDAO.java
+  d. com.test.spring > MemoDTO.java
+  
+  e. views > index.jsp //초기 페이지
+  f. views > add.jsp
+  g. views > addok.jsp
+  h. views > edit.jsp
+  i. views > editok.jsp
+  j. views > delok.jsp
+  k. webapp > resources > css > main.css
+  l. views > template.jsp
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
