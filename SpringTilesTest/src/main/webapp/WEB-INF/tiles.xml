@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+
+<tiles-definitions>
+
+	<!-- 
+	
+	<definition name="info" template="/WEB-INF/views/layout/info.jsp">
+		레이아웃 페이지(layout/info.jsp)에서 인클루드할 조각 페이지 정의
+		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu_member" value="/WEB-INF/views/inc/submenu_member.jsp"></put-attribute>
+		<put-attribute name="info" value="/WEB-INF/views/member/info.jsp"></put-attribute>
+	</definition> 
+	
+	
+	<definition name="point" template="/WEB-INF/views/layout/info.jsp">
+		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu_member" value="/WEB-INF/views/inc/submenu_member.jsp"></put-attribute>
+		<put-attribute name="info" value="/WEB-INF/views/member/point.jsp"></put-attribute>
+	</definition> 
+	
+	
+	
+	
+	
+	<definition name="data" template="/WEB-INF/views/layout/info.jsp">
+		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu_member" value="/WEB-INF/views/inc/submenu_admin.jsp"></put-attribute>
+		<put-attribute name="info" value="/WEB-INF/views/admin/data.jsp"></put-attribute>
+	</definition> 
+	
+	
+	
+	
+	<definition name="chart" template="/WEB-INF/views/layout/info.jsp">
+		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu_member" value="/WEB-INF/views/inc/submenu_admin.jsp"></put-attribute>
+		<put-attribute name="info" value="/WEB-INF/views/admin/chart.jsp"></put-attribute>
+	</definition> 
+	
+	
+	 -->
+	 
+	 
+	 
+	 <definition name="*.*" template="/WEB-INF/views/layout/main.jsp">
+		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
+		<put-attribute name="mainmenu" value="/WEB-INF/views/inc/mainmenu.jsp"></put-attribute>
+		<put-attribute name="submenu" value="/WEB-INF/views/inc/submenu_{1}.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
+	</definition> 
+	
+</tiles-definitions>
+
+
+
+
+
+
+
+
+
+
+
+
