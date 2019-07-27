@@ -1,0 +1,52 @@
+필기.txt - SpringTilesTest
+
+파일 생성
+1. MainController.java
+	- //MemberController.java
+	- //AdministratorController.java
+	
+2. views > member > info.jsp //회원 정보 페이지
+3. views > member > point.jsp //회원 포인트 페이지
+
+4. views > admin > point.jsp //관리자 운영 데이터 페이지
+5. views > admin > chart.jsp //관리자 차트 페이지
+
+6. views > inc > asset.jsp
+7. views > inc > mainmenu.jsp  //주메뉴(조각 페이지)
+8. views > inc > submenu_member.jsp //보조메뉴(조각페이지)
+9. views > inc > submenu_admin.jsp //보조메뉴(조각페이지)
+
+10. webapp > resources > css, js, fonts, images 폴더 복사(SpringMemo)
+
+
+
+
+
+
+pom.xml 수정
+- tiles 관련 <dependency> x 5개 추가
+
+파일 생성
+- webapp > WEB-INF > tiles.xml
+
+타일즈 설정
+- servlet-context.xml
+- tiles.xml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
