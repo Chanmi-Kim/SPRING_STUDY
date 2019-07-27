@@ -1,0 +1,43 @@
+새프로젝트 생성
+1. Spring MVC Project > "SpringNonTilesTest" > "com.test.spring"
+2. Spring MVC Project > "SpringTilesTest" > "com.test.spring"
+
+Spring Tiles
+- 사이트 레이아웃 작업 도구
+- 전체 레이아웃 구성  or 반복되는 모듈 설계 등..
+
+업무
+1. 회원 관련 업무
+2. 관리자 관련 업무
+
+파일 생성
+1. MainController.java
+	- //MemberController.java
+	- //AdministratorController.java
+	
+2. views > member > info.jsp //회원 정보 페이지
+3. views > member > point.jsp //회원 포인트 페이지
+
+4. views > admin > point.jsp //관리자 운영 데이터 페이지
+5. views > admin > chart.jsp //관리자 차트 페이지
+
+6. views > inc > asset.jsp
+7. views > inc > mainmenu.jsp  //주메뉴(조각 페이지)
+8. views > inc > submenu_member.jsp //보조메뉴(조각페이지)
+9. views > inc > submenu_admin.jsp //보조메뉴(조각페이지)
+
+10. webapp > resources > css, js, fonts, images 폴더 복사(SpringMemo)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
