@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="test">
+	<!-- "test.m1" -->
+	<update id="m1">
+		update tblMyBatis set
+			num = num + 1
+	</update>
+	
+	<update id="m2" parameterType="String">
+		update tblMyBatis set
+			num = num * 1.1
+				where seq = #{seq}
+	</update>
+	
+	<insert id="m3" parameterType="java.util.HashMap">
+		insert into tblMyBatis values (mybatis_seq.nextval, #{num}, #{txt})
+	</insert>
+	
+	
+	<insert id="m4" parameterType="com.test.spring.MyBatisDTO">
+		insert into tblMyBatis values (mybatis_seq.nextval, #{num}, #{txt})
+	</insert>
+	
+	
+	<select id="m5" resultType="Integer"><!-- rs.getInt() -->
+		select count(*) from tblInsa
+	</select>
+	
+	<select id="m6" parameterType="String" resultType="com.test.spring.MyBatisDTO">
+		select * from tblInsa where num = #{num}
+	</select>
+	
+	<select id="m7" resultType="String">
+		select distinct buseo from tblInsa
+	</select>
+	
+	<select id="m8" parameterType="String" resultType="com.test.spring.MyBatisDTO">
+		select * from tblInsa where buseo = #{buseo}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
