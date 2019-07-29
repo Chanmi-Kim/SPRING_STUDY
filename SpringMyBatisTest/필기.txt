@@ -1,0 +1,54 @@
+1. 새프로젝트 생성
+ - Spring Legacy Project > Spring MVC Project > "SpringMyBatisTest" > "com.test.spring"
+ 
+2. MyBatis(iBatis)
+ - 응용 프로그램 <-> (중간 계층 : 퍼시스턴스 계층) <-> 데이터베이스
+ - JDBC
+ 	a. ojdbc.jar 참조
+ - Spring JDBC
+ 	a. ojdbc.jar 참조
+ 	b. 스프링 세팅
+ - MyBatis
+ 	a. pom.xml
+ 		- ojdbc.jar
+ 		- mybtais
+ 		- log4j
+ 	b. WEB-INF > spring > root-context.xml
+
+POST 인코딩 필터
+ - web.xml
+
+ 
+파일 생성
+1. MyBatisController.java
+2. MyBatisService.java + IMyBatisService.java
+//2. MyBatisServiceImpl.java + MyBatisService.java
+3. MyBatisDAO.java
+4. MyBatisDTO.java
+5. views > result.jsp
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
