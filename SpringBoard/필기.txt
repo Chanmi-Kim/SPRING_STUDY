@@ -1,0 +1,76 @@
+새프로젝트 생성
+- Spring Legacy Project > Spring MVC Project > "SpringBoard" > "com.test.spring"
+
+1. DB
+- SpringBoard > script.sql
+
+2. 어노테이션 기반 + 인코딩 필터 + MyBatis + Spring Tiles (+ AOP + Transaction + File Upload)
+
+3. pom.xml
+- JDBC(1)
+- Spring-JDBC(1)
+- MyBatis(4)
+- log4j(1)
+- lombok(1)
+- tiles(5)
+
+4. web.xml
+- 요청 주소 확장자 지정
+- POST 인코딩 처리 필터 추가
+
+5. root-context.xml
+- MyBatis 설정
+	- com.test.spring.mapper 패키지 추가 + 매퍼 파일 추가(board.xml)
+	- config 파일 추가(mybatis.xml)
+- log4j 설정
+	- src/main/resources > log4j.xml 설정
+	- <bean> 추가 
+
+6. servlet-context.xml
+	- 기존 ViewResolver 주석
+	- Tiles 관련 <bean> 2개 추가
+	- tiles.xml 추가
+
+
+7. 파일 생성
+	a. BoardController.java
+	b. IBoardService.java + BoardService.java
+	c. BoardDAO.java
+	d. BoardDTO.java
+	e. WEB-INF > views > layout > board.jsp //전체 레이아웃 구성 파일
+	f. WEB-INF > views > content > //컨텐츠 페이지 
+		- list.jsp
+		- add.jsp
+		- view.jsp
+		- edit.jsp
+		- del.jsp
+	g. WEB-INF > views > inc > //조각 페이지(보조 페이지)
+		- asset.jsp
+		- header.jsp
+		- footer.jsp
+	h. webapp > resources > // 클라이언트 라이브러리
+		- css 폴더
+		- js 폴더
+		- fonts 폴더
+		- images 폴더
+		
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
