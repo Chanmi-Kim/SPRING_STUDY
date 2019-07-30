@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	
+	<select id="list" resultType="bdto"> <!-- 별명으로 쓸 수 있음. mybatis.xml에서 수정 -->
+		select seq, name, subject, regdate <!-- seq as num처럼 alias 중간에 추가할 수 있음, 어쩔 수 없는 상황이 생기면 알아볼 수 있는 이름으로 고쳐줄 것 But 물리적으로 맞추는 것이 가장 편함 --> 
+			from tblSpringBoard
+				order by seq desc
+	</select>
+	
+	<select id="get" parameterType="String" resultType="bdto">
+		select * from  tblSpringBoard
+			where seq = #{seq}
+	</select>
+	
+	<insert id="add" parameterType="bdte">
+		insert into tblSpringBoard values (springboard_seq.nextval, #{name}, #{pw}, #{subject}, #{content}, default)
+	</insert>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
