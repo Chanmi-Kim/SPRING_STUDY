@@ -1,0 +1,61 @@
+1. 새프로젝트 생성
+ - "SpringWebAOPTest" > "com.test.spring"
+ - 게시판(목록, 쓰기, 보기)
+
+참고 프로젝트(SpringBoard)
+ 
+2. pom.xml
+ - JDBC
+ - Spring-JDBC
+ - MyBatis
+ - log4j
+ - lombok
+ - AOP
+
+3. web.xml
+ - 확장자
+ - 인코딩 필터 
+ 
+4. root-context.xml
+ - MyBatis
+ 	- com.test.spring.mapper 패키지 생성 > board.xml 복사
+ 	- WEB-INF > mybatis.xml 복사
+ - log4j
+ 	- src/main/resources > log4j.xml 복사
+ 
+5. servlet-context.xml
+ - tiles : X
+ - transaction : X
+ - AOP
+
+6. 파일 생성
+a. AOPController.java				//컨트롤러
+b. ICore.java + Core.java		//주업무 객체(Service)
+c. DAO.java + DTO.java			//Model
+d. Cross.java							//보조업무 객체
+e. result.jsp								//뷰
+f. Logger.java							//보조업무 객체
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
