@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="transaction">
+
+	<update id="addPoint" parameterType="String">
+		update tblSpringMember set
+			point = point + 10
+				where id = #{id}
+	</update>
+	
+	<insert id="add" parameterType="com.test.spring.DTO">
+		insert into tblSpringNote values (note_seq.nextval, #{id}, #{content})
+	</insert>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
