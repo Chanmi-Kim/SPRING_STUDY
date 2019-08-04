@@ -1,0 +1,60 @@
+새프로젝트 생성
+ - "SpringTransactionTest" > "com.test.spring"
+ 
+스프링에서 트랜잭션 처리
+ - script.sql
+ 
+트랜잭션
+- 프로시저 내에서 구현
+- JDBC 사용(Connection)
+- Spring 사용
+ 
+세팅
+1. pom.xml
+ - MyBatis
+ - Transaction(X)
+ 
+2. web.xml
+ - 확장자
+ - 필터
+ 
+3. root-context.xml
+ - MyBatis
+ 	- com.test.spring.mapper 생성 + board.xml 복사 > transaction.xml 수정
+ 	- WEB-INF > mybatis.xml 복사
+ - log4j
+ 	- com.test.spring.resources > log4j.xml
+
+4. servlet-context.xml
+ - AOP 설정(스프링 트랙잭션이 AOP 기반)
+
+5. 파일 생성
+ - TransactionController.java
+ - IService.java + Service.java
+ - DAO.java
+ - DTO.java
+ 
+ - add.jsp
+ - addok.jsp
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
