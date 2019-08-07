@@ -1,0 +1,41 @@
+1. 새프로젝트 생성
+ - "SpringFileTest" > "com.test.spring"
+ 
+2. pom.xml
+ - 파일 업로드 지원 jar
+ 
+3. web.xml
+ - 확장자
+ - 인코딩 필터
+
+4. root-context.xml
+ - 파일 업로드 관련 설정
+ 
+5. 파일 생성
+ - FileController.java
+ 
+ a. 단일 업로드
+ 	- add.jsp
+ 	- addok.jsp
+ 
+ b. 다중 업로드
+ 	- addmulti.jsp
+ 	- addmultiok.jsp
+ 
+6. 첨부 파일 폴더 생성
+ - webapp > resources > files 폴더 생성
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
